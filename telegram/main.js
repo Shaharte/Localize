@@ -1,8 +1,8 @@
+const TelegramBot = require('node-telegram-bot-api');
 const axios = require("axios");
 const path = require('path');
 const userSchema = require('./schema');
 const { token } = require(__dirname + '/token.json');
-const TelegramBot = require('node-telegram-bot-api');
 const LocalizeBot = new TelegramBot(token, { polling: true });
 const _ = require('lodash');
 
